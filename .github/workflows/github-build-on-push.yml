@@ -14,6 +14,6 @@ jobs:
           java-version: '17'
           distribution: 'adopt'
       - name: compile and build code with maven
-        run: mvn --batch-mode  
+        run: mvn --batch-mode clean install
 
    
