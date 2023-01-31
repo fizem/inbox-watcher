@@ -4,7 +4,7 @@ run-name: "{{ github.actor }} is launching the GITHUB build on push workflows"
 on: [push]
 jobs: 
   inbox-watcher-build-on-push
-    runs-on: ubuntu-latest
+    runs-on: "ubuntu-latest"
     steps:
       - name: Checkout source inbox watcher code
         uses: actions/checkout@v3 
