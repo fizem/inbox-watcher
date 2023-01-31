@@ -1,5 +1,5 @@
-name: GITHUB build on push
-run-name: {{ github.actor }} is launching the GITHUB build on push workflows
+name: "GITHUB build on push"
+run-name: "{{ github.actor }} is launching the GITHUB build on push workflows"
 
 on: [push]
 jobs: 
@@ -13,7 +13,7 @@ jobs:
         with:
           java-version: '17'
           distribution: 'adopt'
-      - name: compile the source code with maven
-        run: mvn --batch-mode 
+      - name: compile and build code with maven
+        run: mvn --batch-mode  
 
    
